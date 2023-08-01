@@ -1,2 +1,7 @@
-package org.example;public class Currency {
+package org.example;
+
+public enum Currency {
+    USD,
+    EUR,
+    UAH
 }

@@ -1,2 +1,6 @@
-package org.example;public class Status {
+package org.example;
+
+public enum Status {
+    ACTIVE,
+    CLOSED
 }
