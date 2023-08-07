@@ -25,7 +25,10 @@ public class BankCardGenerator2 {
     public static String generate() {
         String pan = generatorPan();
        String dateCVV= generatorDateCVV();
-          return pan + dateCVV;
+       Currency2 currency2=getRandomCurrency();
+       Double balance = getBalance();
+       Status status=getStatusBankCard();
+          return "\n № = "+pan +"\n dateCVV =  "+ dateCVV+"\n currency - "+currency2+"\n balance = "+balance+"\n status - "+status;
     }
 
     private static String generatorDateCVV() {
@@ -54,5 +57,17 @@ public class BankCardGenerator2 {
         return developers;
     }
 
+    public static double getBalance() {
+        return random.nextDouble(1_000_000);
+    }
 
+    public static Currency2 getRandomCurrency(){
+        Currency2[] currencies = Currency2.values();
+        return currencies[random.nextInt(currencies.length)];
+    }
+
+    public static Status getStatusBankCard(){
+        Status[] statuses = Status.values();
+        return statuses[random.nextInt(statuses.length)];
+    }
 }

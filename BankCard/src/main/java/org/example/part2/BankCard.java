@@ -17,6 +17,10 @@ public class BankCard {
 
     private final CardDetails number;
 
+    public CardDetails getNumber() {
+        return number;
+    }
+
     public BankCard(Currency currency, Status status, CardDetails number) {
         this.currency = currency;
         this.status = status;
