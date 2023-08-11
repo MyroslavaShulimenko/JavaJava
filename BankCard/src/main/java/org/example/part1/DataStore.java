@@ -1,4 +1,4 @@
-package org.example;
+package org.example.part1;
 
 import java.time.YearMonth;
 import java.util.Comparator;
