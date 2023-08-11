@@ -1,4 +1,4 @@
-package org.example;
+package org.example.part1;
 //Создать класс Клиент:
 //- Имя
 //- Карта
